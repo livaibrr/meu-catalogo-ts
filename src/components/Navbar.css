@@ -1,0 +1,38 @@
+/* Arquivo: src/components/Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: fit-content;
+  
+    /* --- EFEITO GLASSMORPHISM (MAIS SUTIL) --- */
+    background: rgba(45, 55, 99, 0.7); /* Fundo escuro com transparência */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px; /* Bordas arredondadas para um visual moderno */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    background-color: rgba(236, 240, 241, 0.2);
+  }
+  
+  /* O link ativo terá a cor de destaque */
+  .navbar a.active {
+    background-color: #3498db;
+    color: white;
+  }

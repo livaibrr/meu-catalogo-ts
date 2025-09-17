@@ -1,0 +1,16 @@
+/* Arquivo: src/index.css */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* --- NOVOS ESTILOS --- */
+  /* Um gradiente suave para simular um fundo de mar claro */
+  background: linear-gradient(135deg, #2a2ca5 0%, #0ec8f7 100%);
+  background-attachment: fixed; /* Mantém o gradiente fixo durante o scroll */
+  color: #1c2833; /* Cor de texto padrão mais escura para contraste */
+}

@@ -1,0 +1,73 @@
+/* Arquivo: src/components/Card.css */
+
+.card {
+    /* --- EFEITO GLASSMORPHISM --- */
+    background: rgba(255, 255, 255, 0.25); /* Fundo branco com bastante transparência */
+    backdrop-filter: blur(10px); /* O efeito "fosco" que desfoca o fundo */
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    
+    /* --- ESTILOS GERAIS --- */
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 1rem 1.5rem;
+    flex-grow: 1;
+  }
+  
+  .card-title {
+    margin: 0 0 0.5rem 0;
+    color: #1a222b; /* Cor mais escura para o título */
+    font-size: 1.4rem;
+  }
+  
+  .card-content p {
+    margin: 0.25rem 0;
+    color: #2c3e50; /* Cor mais escura para os detalhes */
+  }
+
+  /* Adicione este trecho ao FINAL do arquivo src/components/Card.css */
+
+.favorite-button {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    transition: background-color 0.2s, opacity 0.2s;
+    margin-top: auto; /* Empurra o botão para o final do card */
+  
+    /* --- NOVO ESTILO (igual à Navbar) --- */
+    background: rgba(44, 62, 80, 0.85); /* Fundo escuro semi-transparente */
+  }
+  
+  .favorite-button:hover {
+    opacity: 0.9;
+  }
+  
+  .favorite-button.favorited {
+    background-color: #e74c3c; /* Vermelho para indicar que está favoritado */
+  }
+  
+  .favorite-button.favorited:hover {
+    background-color: #c0392b;
+  }

@@ -1,0 +1,11 @@
+/* Arquivo: src/pages/Page.css */
+.page-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
